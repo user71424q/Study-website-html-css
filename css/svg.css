@@ -1,0 +1,94 @@
+:root {
+    --ad_width: 100px;
+    --img_width: calc(var(--ad_width)*0.5);
+    --bigger_font: calc(var(--ad_width)/1.25);
+    --smaller_font: calc(var(--bigger_font)/2);
+    --micro_font: calc(var(--smaller_font)/3);
+}
+
+.ad {
+    display: block;
+    width: var(--ad_width);
+    height: var(--ad_width);
+	user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a_letter {
+    font-size: var(--bigger_font);
+	font-weight: bold;
+	fill: url(#grad);
+    transform: translate(35%, 40%);
+}
+
+.b_letter {
+    font-size: var(--smaller_font);
+    fill: darkblue;
+	font-weight: bold;
+    transform: translate(70%, 87%);
+    text-shadow: 0.03em 0.03em 2px cyan, 0 0 0.2em magenta;
+}
+
+.ad:hover .a_letter {
+    font-size: var(--smaller_font);
+    transition: font-size 2s, text-shadow 2s;
+}
+
+.ad:hover .b_letter {
+    font-size: var(--bigger_font);
+    transition: font-size 2s, text-shadow 2s;
+}
+
+.ad:hover .b_letter {
+    offset-path: path('m 0 0 a 50 50 0 0 1 0 -100');
+    offset-rotate: 0deg;
+    animation: move 2s ease-in-out forwards;
+}
+
+.ad:hover .a_letter {
+    offset-path: path('m 0 0 a 50 50 0 0 1 0 100');
+    offset-rotate: 0deg;
+    animation: move 2s ease-in-out forwards;
+}
+
+.ad:active .a_letter,
+.ad:active .b_letter {
+    transition: font-size 10ms;
+    font-size: var(--micro_font);
+    /* writing-mode: vertical-rl; */
+}
+
+.img, .autobot_text {
+    display: none;
+}
+
+.ad:active .img {
+    width: var(--img_width);
+    display: block;
+    --pos: calc((var(--ad_width) - var(--img_width))/2);
+    transform: translate(var(--pos), var(--pos));
+}
+
+.ad:active .autobot_text
+{
+    display: block;
+    font-size: var(--micro_font);
+    fill: blue;
+    --posy: calc(var(--ad_width)/9 + var(--img_width) + (var(--ad_width) - var(--img_width))/2);
+    --posx: calc(var(--ad_width)/2.5);
+    transform: translate(var(--posx), var(--posy));
+}
+
+.ad:active
+{
+    /* filter: sepia(80%); */
+    filter: hue-rotate(180deg);
+}
+
+
+@keyframes move {
+    to {
+        offset-distance: 100%;
+    }
+}

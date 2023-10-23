@@ -1,0 +1,164 @@
+.strip
+{
+    width: 1.5em;
+    height: 5em;
+    background-color: coral; 
+}
+.picture
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 1em;
+}
+.bottom
+{
+    width: 26em;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: yellow;
+}
+.water
+{
+    width: 26em;
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    /*background: linear-gradient(180deg, white, cyan);*/
+}
+#grass1
+{
+    position: absolute;
+    left: 4em;
+    width: 20em;
+    height: 30em;
+    border-left: 1em solid green;
+    border-radius: 50%;
+}
+#grass2
+{
+    position: absolute;
+    left: 12em;
+    top: 1em;
+    width: 20em;
+    height: 30em;
+    border-left: 1em solid green;
+    border-radius: 50%;
+}
+#grass3
+{
+    position: absolute;
+    left: 4em;
+    top: 1em;
+    width: 20em;
+    height: 30em;
+    border-left: 1em solid green;
+    border-radius: 50%;
+    transform: scale(-1, 1);
+}
+.fish
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fish_body
+{
+    position: absolute;
+    left: 9em;
+    width: 10em;
+    height: 5em;
+    background: linear-gradient(90deg, rgba(255,154,0), rgba(249,255,195));
+    border-radius: 50%;
+}
+.fish_tail
+{
+    position: absolute;
+    width: 8em; 
+    height: 8em;
+    background: radial-gradient(circle at top 0 left 0, transparent, transparent 75%, rgba(255,154,0) 75%);
+    transform: rotate(-45deg);
+}    
+.fish_scales:before
+{
+    content: "";
+    display: block;
+    margin-left: 1em;
+    margin-top: -0.9em;
+    width: 1em;
+    height: 1em;
+    border-left: 0.4em solid red;
+    border-top: 0.4em solid red;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0.4em solid transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+.fish_scales
+{
+    position: absolute;
+    left: 12em;
+    width: 1em;
+    height: 1em;
+    border-left: 0.4em solid red;
+    border-top: 0.4em solid red;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0.4em solid transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.fish_scales:after
+{
+    content: "";
+    display: block;
+    margin-left: -1em;
+    margin-top: 0em;
+    width: 1em;
+    height: 1em;
+    border-left: 0.4em solid red;
+    border-top: 0.4em solid red;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0.4em solid transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.fish_gills
+{
+    position: absolute;
+    left: 15em;
+    width: 3em;
+    height: 3em;
+    border-left: 0.6em solid red;
+    border-top: 0.6em solid red;
+    border-right: 0.6em solid transparent;
+    border-bottom: 0.6em solid transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.fish_eye
+{
+    position: absolute;
+    left: 17em;
+    height: 0;
+    width: 0;
+    border: 0.5em solid black;
+    border-radius: 50%;
+}
+.fish1
+{
+    transform: rotate(-10deg); 
+    left: -4em;
+    top: 13em;
+}
+.fish2
+{
+    transform: scale(-0.7, 0.7); 
+    left: 28em;
+    top: 17em;
+}
