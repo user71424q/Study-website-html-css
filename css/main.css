@@ -31,7 +31,8 @@ header
     position: relative;
 	margin: 0.3em;
     background-color: rgb(71, 71, 71);
-    width: 1.33em;
+    max-width: 1.33em;
+    min-width: 1.33em;
     height: 1.33em;
 }
 .logo_eye
@@ -129,7 +130,13 @@ li
     display: flex;
     align-items: center;
     text-align: left;
+    margin-bottom: 1em;
     gap: 1em;
+}
+.top_author img
+{
+    width: 60px;
+    border-radius: 50%;
 }
 .hidden_link, .hidden_link:visited
 {
@@ -168,7 +175,7 @@ footer
 @media screen and (max-aspect-ratio: 1/1) {
     :root
     {
-        font-size: 0.9rem;
+        font-size: 2em;
     }
     main
     {
@@ -182,7 +189,7 @@ footer
     }
     .quote 
     {
-        border: solid 1em gray;
+        border: solid 2em gray;
         margin: 1.5em 2em;
     }
     .top_authors
@@ -191,7 +198,11 @@ footer
     }
     .top_author
     {
-        margin-left: 30%;
+        margin-left: 15%;
+    }
+    .top_author img
+    {
+        width: 120px;
     }
     header
     {
@@ -211,12 +222,32 @@ footer
     }
 }
 
+@media screen and (max-aspect-ratio: 1/1) and (max-width: 720px) {
+    :root
+    {
+        font-size: 1em;
+    }
+    .top_author
+    {
+        margin-left: 30%;
+    }
+    .quote 
+    {
+        border: solid 1em gray;
+        margin: 1.5em 2em;
+    }
+    .top_author img
+    {
+        width: 60px;
+    }
+}
+
 /* and (min-width: 721px) and (max-width: 1280px)  */
 @media screen and (min-aspect-ratio: 1/1) {
     
     :root
     {
-        font-size: 0.9rem;
+        font-size: 1em;
     }
     main
     {
