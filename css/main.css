@@ -175,7 +175,7 @@ footer
 @media screen and (max-aspect-ratio: 1/1) {
     :root
     {
-        font-size: 2em;
+        font-size: 1em;
     }
     main
     {
@@ -191,6 +191,10 @@ footer
     {
         border: solid 2em gray;
         margin: 1.5em 2em;
+    }
+    .menu
+    {
+        padding-left: 2em;
     }
     .top_authors
     {
@@ -222,7 +226,7 @@ footer
     }
 }
 
-@media screen and (max-aspect-ratio: 1/1) and (max-width: 720px) {
+@media screen and (max-aspect-ratio: 1/1) and (min-width: 7cm) {
     :root
     {
         font-size: 1em;
