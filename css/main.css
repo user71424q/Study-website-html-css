@@ -164,7 +164,8 @@ footer
     padding: 0.8em;
 }
 
-@media screen and (max-width: 720px) {
+/* and (max-width: 720px)  */
+@media screen and (orientation:portrait) {
     
     :root
     {
