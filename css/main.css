@@ -179,7 +179,7 @@ footer
     }
     main
     {
-        grid-template-rows: min-content min-content 1fr 20em 12em;
+        grid-template-rows: min-content min-content 1fr min-content min-content;
         grid-template-areas: 
                         "h h h h h h h h h h"
                         "m m m m m m m m m m"
