@@ -171,8 +171,7 @@ footer
     padding: 0.8em;
 }
 
-/* and (max-aspect-ratio: 1/1)   */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 767px) {
     :root
     {
         font-size: 1em;
@@ -226,13 +225,7 @@ footer
     }
 }
 
-/* and (min-aspect-ratio: 1/1)  */
-@media only screen and (min-width: 1081px) and (max-width: 1280px) {
-    
-    :root
-    {
-        font-size: 1em;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
     main
     {
         grid-template-rows: min-content 1fr 6em;
