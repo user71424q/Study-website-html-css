@@ -171,8 +171,8 @@ footer
     padding: 0.8em;
 }
 
-/* and (max-width: 720px)  */
-@media screen and (max-aspect-ratio: 1/1) {
+/* and (max-aspect-ratio: 1/1)   */
+@media screen and (max-width: 767px) {
     :root
     {
         font-size: 1em;
@@ -226,28 +226,8 @@ footer
     }
 }
 
-@media screen and (max-aspect-ratio: 1/1) and (min-width: 7cm) {
-    :root
-    {
-        font-size: 1em;
-    }
-    .top_author
-    {
-        margin-left: 30%;
-    }
-    .quote 
-    {
-        border: solid 1em gray;
-        margin: 1.5em 2em;
-    }
-    .top_author img
-    {
-        width: 60px;
-    }
-}
-
-/* and (min-width: 721px) and (max-width: 1280px)  */
-@media screen and (min-aspect-ratio: 1/1) {
+/* and (min-aspect-ratio: 1/1)  */
+@media screen and (min-width: 768px) and (max-width: 1280px) {
     
     :root
     {
