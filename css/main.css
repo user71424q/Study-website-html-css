@@ -1,12 +1,12 @@
 body
 {
     margin:0;
-}
+}   
 main
 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: min-content 1fr 6em;
+    grid-template-rows: min-content 1fr min-content;
     grid-template-areas: 
                         "h h h h h h h h h h"
                         "m c c c c c c c t t"
