@@ -5,7 +5,7 @@
         <title>Цитаты великих</title>
         <link rel="shortcut icon" href="../images/icon.ico">
         <link rel="stylesheet" href="../css/main.css" />
-        <link rel="stylesheet" href="../css/pic.css" />
+        <link rel="stylesheet" href="../css/vic.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
@@ -19,54 +19,26 @@
                     <div class="logo_eyelash" id="right_eyelash"></div>
                     <div class="logo_smile"></div>
                 </div>
-                <div>Рисунок CSS</div>
+                <div>DOM викторина</div>
             </header>
 
             <div class="menu">
                 <ul>
                     <a href="../index.html" class="hidden_link"><li>На главную</li></a>
-                    <a href="./task2.html" class="hidden_link"><li>SVG-реклама</li></a>
-                    <a href="../html/task3.html" class="hidden_link"><li>DOM викторина</li></a>
+                    <a href="../html/task1.html" class="hidden_link"><li>Рисунок CSS</li></a>
+                    <a href="../html/task2.html" class="hidden_link"><li>SVG-реклама</li></a>
                 </ul>
             </div>
 
             <div class="content">
-                
-                <div class="picture">
-                    <div class="water">
-                        <!--Трава-->
-                        <div id="grass1"></div>
-                        <div id="grass2"></div>
-                        <div id="grass3"></div>
-                        <!--Рыба-->
-                        <div class="fish fish1">
-                            <div class="fish_tail"></div>
-                            <div class="fish_body"></div>
-                            <div class="fish_scales"></div>
-                            <div class="fish_gills"></div>
-                            <div class="fish_eye"></div>
-                        </div>
-                        <!--Маленькая рыба-->
-                        <div class="fish fish2">
-                            <div class="fish_tail"></div>
-                            <div class="fish_body"></div>
-                            <div class="fish_scales"></div>
-                            <div class="fish_gills"></div>
-                            <div class="fish_eye"></div>
-                            <div class="fish_scales"></div>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="strip"></div>
-                        <div class="strip"></div>
-                        <div class="strip"></div>
-                        <div class="strip"></div>
-                        <div class="strip"></div>
-                        <div class="strip"></div>
-                        <div class="strip"></div>
-                        <div class="strip"></div>
-                    </div>
+
+                <div id="question-container">
+                    <h2 id="question"></h2>
+                    <div id="choices"></div>
+                    <button id="submitBtn" disabled>Подтвердить</button>
+                    <div id="description"></div>
                 </div>
+                
                 <div class="quote">
                     <p class="quote_text">Без труда не вытащишь и рыбку из пруда</p>
                     <p class="author">- Народная мудрость</p>
@@ -108,6 +80,6 @@
         
         <div class="scroll_to_top"><a href="#" class="hidden_link">Наверх</a></div>
         
-        
+        <script src="../js/vic.js"></script>
     </body>
 </html>
