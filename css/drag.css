@@ -1,0 +1,69 @@
+#task{
+    display: grid;
+    grid-template-columns: 20em 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: 
+                        "d d"
+                        "b i";
+    word-wrap: break-word;
+    border: 2px solid black;
+    background-color: rgb(187, 241, 255);
+    margin: 1em;
+}
+#input_block {
+    grid-area: i;
+    padding: 10px;
+}
+
+#input_area {
+    display: flex; 
+    margin-bottom: 10px;
+}
+
+#input, #submit_btn {
+    margin-right: 10px; 
+}
+
+#output {
+    background-color: white; 
+    color: red;
+    width: 50%;
+}
+
+
+.dragable_block {
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    width: 15em; 
+    padding: 10px; /* Внутренний отступ для текста */
+    margin: 5px 0; 
+    box-sizing: border-box; /* Чтобы padding не влиял на общую ширину блока */
+    cursor: grab; /* Курсор в виде "руки", указывающий на возможность перетаскивания */
+    user-select: none;
+    border: 1px solid rgb(112, 112, 112);
+}
+.dragable_block:hover {
+    background-color: #babbbc;
+}
+
+#block_area, #drag_area {
+    display: flex;
+    justify-content: center; /* Центрирование элементов по горизонтали */
+    align-items: center; /* Центрирование элементов по вертикали */
+}
+
+#block_area {
+    flex-direction: column; /* Горизонтальное расположение элементов */
+    grid-area: b;
+    border: 2px solid black;
+    margin: 0.2em;
+}
+
+#drag_area {
+    flex-direction: row; /* Вертикальное расположение элементов */
+    grid-area: d;
+    gap: 2em;
+    min-height: 2em;
+    padding: 0.1em;
+    border-bottom: 2px solid black;
+}
